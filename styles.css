@@ -1,0 +1,429 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font styles */
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #dcf1d9;  */
+    color: #333;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+
+/* Header styles */
+header {
+    text-align: center;
+}
+
+header img {
+    max-width: 250px; 
+    max-height: 250px; 
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 75%;
+}
+
+header nav a:hover {
+    color: #555;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Main content styles */
+section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0.3, 0.3, 0.3, 0.3);
+}
+
+#about {
+    text-align: center;
+}
+
+/* Style for the innovation cards */
+#innovations {
+    display: none;
+}
+
+/* #innovations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.innovations-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.innovations-header h2 {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+}
+
+.innovation-card {
+    flex: 0 1 calc(33.33% - 20px); /* Adjust the width as needed */
+    background-color: #ffffff;
+    border: 1px solid #040404;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* Style for the innovation card headings */
+.innovation-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+/* Style for the innovation card paragraphs */
+.innovation-card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.innovation-card:first-child {
+    margin-top: 1em; /* Add margin to the top of the first card */
+}
+
+:root{
+
+    --main-radius: 5px;
+    --main-padidng: 5px;
+    --grey: #9c9898;
+    --greylight: #d9d5d5;
+    }
+    
+    .container{
+    /* styling */
+    color: black;
+    font-weight: 800;
+    font-size: 1EM;
+    /* ----- */
+    height: 50vh;
+    display:  grid;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.2rem;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "inn2 main main main"
+    "inn2 inn3 inn4 inn5"
+    "inn2 footer footer footer";
+    }
+    
+    nav{
+    background-color: var(--grey);
+    grid-area: nav;
+    text-align: center;
+    font-size: 1.5EM;
+    }
+    
+    nav h3{
+        align-content: center;
+    }
+
+    main{
+    background-color: var(--greylight);
+    grid-area: main;
+    padding: var(--main-padidng);
+    }
+    
+    #inn2{
+    grid-area: inn2;
+    background-color: var(--greylight);
+    padding: var(--main-padidng);
+    }
+    
+    #inn3{
+    grid-area: inn3;
+    border-radius: var(--main-radius);
+    background-color: var(--greylight);
+    padding: var(--main-padidng);
+    }
+    
+    #inn4{
+    grid-area: inn4;
+    border-radius: var(--main-radius);
+    background-color: var(--greylight);
+    padding: var(--main-padidng);
+    }
+    #inn5{
+    grid-area: inn5;
+    border-radius: var(--main-radius);
+    background-color: var(--greylight);
+    padding: var(--main-padidng);
+    }
+    
+    footer{
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    background-color: var(--greylight);
+    padding: var(--main-padidng);
+    }
+
+    #papers {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    }
+    
+    #papers h2 {
+        text-align: center;
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+    #papers ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    #papers li {
+        margin-bottom: 20px;
+    }
+    
+    #papers h3 {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+    }
+    
+    #papers p {
+        font-size: 1rem;
+        color: #333;
+    }
+
+    /* Style for the personal-info section */
+#personal-info {
+    
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#personal-info h2 {
+    text-align: center;
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+}
+
+#personal-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#personal-info li {
+    margin-bottom: 20px;
+}
+
+#personal-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+#personal-info p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Add this CSS class for initially hiding the details */
+.hidden {
+    display: none;
+}
+
+/* Add this CSS class for making the header clickable */
+.clickable {
+    cursor: pointer;
+}
+
+/* Add this CSS for styling the clickable header */
+#personal-info-header {
+    background-color: #ddd;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+/* Add this CSS for styling the header text */
+#personal-info-header h3 {
+    margin: 0;
+}
+
+/* Style for the image-collection section */
+#image-collection {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#image-collection div img{
+    width: 400px;
+    height: 300px;
+    border: 2px solid #ff3d0036;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.3s ease
+}
+
+#image-collection div img{
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+
+#image-collection h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+/* Add this CSS class for initially hiding the details */
+.hidden {
+    display: none;
+}
+
+/* Add this CSS class for making the header clickable */
+.clickable {
+    cursor: pointer;
+}
+
+/* Add this CSS for styling the header text */
+#image-collection-header {
+    background-color: #ddd;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Add this CSS for styling the header text */
+#image-collection-header h3 {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+#social-footer {
+    background-color: #9c9898;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+footer .social-links a:hover {
+    color: #555;
+}
+
+/* Style for the blog section */
+#blog {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Style for the clickable header in the blog section */
+#blog-header {
+    background-color: #ddd;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Style for the header text in the blog section */
+#blog-header h3 {
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Add the hidden class for initially hiding the blog details */
+.hidden {
+    display: none;
+}
+
+    /* mobile layout */
+    
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .container{
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "inn2"
+        "inn3"
+        "inn4"
+        "inn5"
+        "footer"
+        
+        ;
+    }
+    
+}
